@@ -1,0 +1,120 @@
+.footer{
+    border-top: solid 2px #E6E6F0;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding-bottom: 30px;
+    // @media screen and (max-width: 611px){
+    //     padding-bottom: 30px;
+    // }
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        align-items: center;
+        row-gap: 0;
+    }
+    &__bg{
+    background: #F5F5FA;
+    }
+    &__city{
+        color: #323264;
+        position: relative;
+        margin: 0;
+        &::after{
+            position: absolute;
+            content: "";
+            width: 6px;
+            height: 6px;
+            background:  #B3B3BA;
+            border-radius: 50%;
+            top: 34%;
+            right: -17px;
+            @media screen and (max-width: 768px){
+                display: none;
+            }
+        }
+    }
+    &__adress{
+        display: flex;
+        align-items: center;
+        column-gap: 26px;
+        width: 50%;
+        padding-top: 30px;
+        @media screen and (max-width: 768px){
+            flex-direction: column;
+            width: inherit;
+            gap: 10px;
+        }
+    }
+    &__map{
+        color: #24A3FF;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__coperat{
+        font-weight:400;
+        font-size:16px;
+        color: #B3B3BA;
+        text-align: end;
+        width: 50%;
+        @media screen and (max-width: 768px){
+            order: 1;
+            width: inherit;
+        }
+        & p {
+            margin: 30px 0 0 0 ;
+        }
+    }
+    &__tell{
+        color: #46466E;
+        transition: all 0.5s ease;
+        &:hover{
+            color: #24A3FF;
+        }    
+    }
+    &__link_mail{
+        color: #24A3FF;
+        &:hover{
+            color: #46466E;
+        }
+    }
+    &__item{
+        font-weight: 700;
+        position: relative;
+        &:not(:first-child){
+            &::before{
+                position: absolute;
+                content: "";
+                width: 6px;
+                height: 6px;
+                background:  #B3B3BA;
+                border-radius: 50%;
+                top: 34%;
+                left: -17px;
+                @media screen and (max-width: 768px){
+                    display: none;
+                }
+            }
+        }
+        
+    }
+    svg:hover path{
+        fill:#46466E;
+    }
+    &__social{
+        display: flex;
+        align-items: center;
+        column-gap: 26px;
+        width: 100%;
+        @media screen and (max-width: 768px){
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding-top: 21px;
+        }
+        
+    }
+    &_second{
+        border: unset;
+    }
+}

@@ -1,0 +1,28 @@
+// body{
+//     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) cover no-repeat;
+    
+//     border-radius: 0px 0px 12px 12px;
+// }
+*{
+    transition: all ease 0.3s;
+    box-sizing: border-box;
+}
+.conteiner{
+    padding-left: 160px;
+    padding-right: 160px;
+    @media screen and (max-width: 1440px){
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    @media screen and (max-width: 612px){
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+body{
+    @media screen and (max-width: 612px){
+        &.lock{
+            overflow: hidden;
+        }
+    }
+}
